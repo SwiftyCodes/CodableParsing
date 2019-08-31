@@ -40,7 +40,7 @@ class CompactMapVC: UIViewController {
     }
     
     func fetchDataFromJSON(){
-        
+        //Old way of parsing json data
         if let usersArray = try! JSONSerialization.jsonObject(with: jsonValue, options: .allowFragments) as? [[String:Any]] {
             let users = usersArray.compactMap(JsonModel.init)
             print(users)
