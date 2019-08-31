@@ -8,14 +8,14 @@
 
 import Foundation
 
-struct JsonModel {
+struct JSONModel {
     
     var firstName : String
     var lastName : String!
     var age : Int
 }
 
-extension JsonModel {
+extension JSONModel {
     init?(userDict : [String:Any]) {
         guard let firstName = userDict["firstName"] as? String, let lastName = userDict["lastName"]as? String, let age = userDict["age"] as? Int else {return nil}
         self.firstName = firstName
