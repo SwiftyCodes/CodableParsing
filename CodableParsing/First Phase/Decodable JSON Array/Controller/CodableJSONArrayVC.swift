@@ -1,15 +1,14 @@
 //
-//  ViewController.swift
+//  CodableJSONArrayVC.swift
 //  CodableParsing
 //
-//  Created by Anurag Kashyap on 31/08/19.
+//  Created by Anurag Kashyap on 01/09/19.
 //  Copyright © 2019 Anurag Kashyap. All rights reserved.
 //
 
 import UIKit
 
-class CompactMapVC: UIViewController {
-    
+class CodableJSONArrayVC: UIViewController {
     
     let jsonValue = """
 
@@ -31,20 +30,14 @@ class CompactMapVC: UIViewController {
     }
  ]
 
-
 """.data(using: .utf8)!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchDataFromJSON()
-    }
-    
-    func fetchDataFromJSON(){
-        //Old way of parsing json data
-        if let usersArray = try! JSONSerialization.jsonObject(with: jsonValue, options: .allowFragments) as? [[String:Any]] {
-            let users = usersArray.compactMap(JSONModel.init) // Gets single dictinory value
-            print(users)
+        //Decoding from JSON -> Customer Model is Array here now
+        let users = try! JSONDecoder().decode([Customer].self, from: jsonValue)
+        for singleUser in users {
+            print(singleUser.firstName, ":", singleUser.lastName, ":", singleUser.age)
         }
     }
 }
-

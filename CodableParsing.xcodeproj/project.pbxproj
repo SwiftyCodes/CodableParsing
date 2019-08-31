@@ -16,6 +16,8 @@
 		7565568A231B0E490033695B /* DecodableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75655689231B0E490033695B /* DecodableVC.swift */; };
 		7565568C231B0E580033695B /* Decodeable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7565568B231B0E580033695B /* Decodeable.storyboard */; };
 		7565568E231B0F270033695B /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7565568D231B0F270033695B /* Customer.swift */; };
+		75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75655695231B24CF0033695B /* CodableJSONArrayVC.swift */; };
+		75655698231B24DE0033695B /* CodableJSONArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75655697231B24DE0033695B /* CodableJSONArray.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		75655689231B0E490033695B /* DecodableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodableVC.swift; sourceTree = "<group>"; };
 		7565568B231B0E580033695B /* Decodeable.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Decodeable.storyboard; sourceTree = "<group>"; };
 		7565568D231B0F270033695B /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		75655695231B24CF0033695B /* CodableJSONArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableJSONArrayVC.swift; sourceTree = "<group>"; };
+		75655697231B24DE0033695B /* CodableJSONArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CodableJSONArray.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,8 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				75655670231AEC4F0033695B /* AppDelegate.swift */,
-				75655688231B0E250033695B /* Decodable Protocol */,
-				75655686231B0A450033695B /* CompactMap */,
+				7565569B231B277F0033695B /* First Phase */,
 				75655677231AEC500033695B /* Assets.xcassets */,
 				75655679231AEC500033695B /* LaunchScreen.storyboard */,
 				7565567C231AEC500033695B /* Info.plist */,
@@ -72,14 +75,14 @@
 			path = CodableParsing;
 			sourceTree = "<group>";
 		};
-		75655686231B0A450033695B /* CompactMap */ = {
+		75655686231B0A450033695B /* OldJsonStyle_CompactMap */ = {
 			isa = PBXGroup;
 			children = (
 				75655687231B0B190033695B /* Model */,
 				75655692231B0FEF0033695B /* View */,
 				75655693231B0FF30033695B /* Controller */,
 			);
-			path = CompactMap;
+			path = OldJsonStyle_CompactMap;
 			sourceTree = "<group>";
 		};
 		75655687231B0B190033695B /* Model */ = {
@@ -90,14 +93,13 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		75655688231B0E250033695B /* Decodable Protocol */ = {
+		75655688231B0E250033695B /* Single Codable JSON Value */ = {
 			isa = PBXGroup;
 			children = (
-				7565568F231B0FC70033695B /* Model */,
 				75655690231B0FD20033695B /* View */,
 				75655691231B0FD90033695B /* Controller */,
 			);
-			path = "Decodable Protocol";
+			path = "Single Codable JSON Value";
 			sourceTree = "<group>";
 		};
 		7565568F231B0FC70033695B /* Model */ = {
@@ -138,6 +140,42 @@
 				75655672231AEC4F0033695B /* CompactMapVC.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		75655694231B24860033695B /* Decodable JSON Array */ = {
+			isa = PBXGroup;
+			children = (
+				7565569A231B25270033695B /* Controller */,
+				75655699231B25210033695B /* View */,
+			);
+			path = "Decodable JSON Array";
+			sourceTree = "<group>";
+		};
+		75655699231B25210033695B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75655697231B24DE0033695B /* CodableJSONArray.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7565569A231B25270033695B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75655695231B24CF0033695B /* CodableJSONArrayVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7565569B231B277F0033695B /* First Phase */ = {
+			isa = PBXGroup;
+			children = (
+				7565568F231B0FC70033695B /* Model */,
+				75655686231B0A450033695B /* OldJsonStyle_CompactMap */,
+				75655688231B0E250033695B /* Single Codable JSON Value */,
+				75655694231B24860033695B /* Decodable JSON Array */,
+			);
+			path = "First Phase";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +238,7 @@
 			files = (
 				7565568C231B0E580033695B /* Decodeable.storyboard in Resources */,
 				7565567B231AEC500033695B /* LaunchScreen.storyboard in Resources */,
+				75655698231B24DE0033695B /* CodableJSONArray.storyboard in Resources */,
 				75655678231AEC500033695B /* Assets.xcassets in Resources */,
 				75655676231AEC4F0033695B /* CompactMapVC.storyboard in Resources */,
 			);
@@ -215,6 +254,7 @@
 				7565568A231B0E490033695B /* DecodableVC.swift in Sources */,
 				75655683231AEC6C0033695B /* JSONModel.swift in Sources */,
 				7565568E231B0F270033695B /* Customer.swift in Sources */,
+				75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */,
 				75655673231AEC4F0033695B /* CompactMapVC.swift in Sources */,
 				75655671231AEC4F0033695B /* AppDelegate.swift in Sources */,
 			);
