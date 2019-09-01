@@ -19,10 +19,13 @@ struct GeoEnumResponseModel : Decodable {
 }
 
 struct GeoEnumModel : Decodable {
+    
     var latitude : Double
     var longitude : Double
     
+    //Mapping Properties using Key Codings - These are only mentioned wehn we need to check this!
     private enum CodingKeys : String, CodingKey {
+        //lat and lng are the keys mentioned in JSON
         case latitude = "lat"
         case longitude = "lng"
     }
@@ -59,11 +62,12 @@ struct CustomerEnumModel : Decodable {
     var dateCreated : Date
     var address : AddressEnumModel?
     
+    //These are only mentioned wehn we need to map this from JSON coming! like adress = ADDRES
     private enum CodingKeys : String, CodingKey {
         case firstName
         case lastName
         case dateCreated
-        case address
+        case address = "ADDRESS"
         
     }
 }

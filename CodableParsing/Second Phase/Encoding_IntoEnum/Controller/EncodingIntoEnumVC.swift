@@ -18,7 +18,7 @@ let nestedEnumJSON = """
             "first_name"  : "Anurag",
             "lastName"   : "Kashyap",
             "dateCreated": "05/17/1992",
-            "address"    : {
+            "ADDRESS"    : {
                             
                     "street": "20/213",
                     "city"  : "New Delhi",
