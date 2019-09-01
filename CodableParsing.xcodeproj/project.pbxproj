@@ -24,6 +24,9 @@
 		75FBFD3A231BF775002D1D24 /* NestedValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD39231BF775002D1D24 /* NestedValueVC.swift */; };
 		75FBFD3C231BF77F002D1D24 /* NestedValue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBFD3B231BF77F002D1D24 /* NestedValue.storyboard */; };
 		75FBFD3E231BF79E002D1D24 /* NestedCustomerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD3D231BF79E002D1D24 /* NestedCustomerModel.swift */; };
+		75FBFD41231C10D4002D1D24 /* EncodingIntoEnum.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBFD40231C10D4002D1D24 /* EncodingIntoEnum.storyboard */; };
+		75FBFD43231C10EC002D1D24 /* EncodingIntoEnumVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD42231C10EC002D1D24 /* EncodingIntoEnumVC.swift */; };
+		75FBFD48231C119E002D1D24 /* NestedEnumJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD47231C119E002D1D24 /* NestedEnumJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +49,9 @@
 		75FBFD39231BF775002D1D24 /* NestedValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedValueVC.swift; sourceTree = "<group>"; };
 		75FBFD3B231BF77F002D1D24 /* NestedValue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NestedValue.storyboard; sourceTree = "<group>"; };
 		75FBFD3D231BF79E002D1D24 /* NestedCustomerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCustomerModel.swift; sourceTree = "<group>"; };
+		75FBFD40231C10D4002D1D24 /* EncodingIntoEnum.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EncodingIntoEnum.storyboard; sourceTree = "<group>"; };
+		75FBFD42231C10EC002D1D24 /* EncodingIntoEnumVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodingIntoEnumVC.swift; sourceTree = "<group>"; };
+		75FBFD47231C119E002D1D24 /* NestedEnumJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedEnumJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +200,7 @@
 		75FBFD27231BEA33002D1D24 /* Second Phase */ = {
 			isa = PBXGroup;
 			children = (
+				75FBFD3F231C10B8002D1D24 /* Encoding_IntoEnum */,
 				75FBFD35231BF72E002D1D24 /* DecodingNestedValue */,
 				75FBFD28231BEA76002D1D24 /* DecodingKeyValue */,
 			);
@@ -268,6 +275,40 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		75FBFD3F231C10B8002D1D24 /* Encoding_IntoEnum */ = {
+			isa = PBXGroup;
+			children = (
+				75FBFD46231C1189002D1D24 /* Model */,
+				75FBFD45231C10FB002D1D24 /* View */,
+				75FBFD44231C10F4002D1D24 /* Controller */,
+			);
+			path = Encoding_IntoEnum;
+			sourceTree = "<group>";
+		};
+		75FBFD44231C10F4002D1D24 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				75FBFD42231C10EC002D1D24 /* EncodingIntoEnumVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		75FBFD45231C10FB002D1D24 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75FBFD40231C10D4002D1D24 /* EncodingIntoEnum.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		75FBFD46231C1189002D1D24 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75FBFD47231C119E002D1D24 /* NestedEnumJSON.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -326,6 +367,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75FBFD41231C10D4002D1D24 /* EncodingIntoEnum.storyboard in Resources */,
 				7565568C231B0E580033695B /* Decodeable.storyboard in Resources */,
 				7565567B231AEC500033695B /* LaunchScreen.storyboard in Resources */,
 				75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */,
@@ -344,11 +386,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */,
+				75FBFD48231C119E002D1D24 /* NestedEnumJSON.swift in Sources */,
 				7565568A231B0E490033695B /* DecodableVC.swift in Sources */,
 				75655683231AEC6C0033695B /* JSONModel.swift in Sources */,
 				75FBFD3A231BF775002D1D24 /* NestedValueVC.swift in Sources */,
 				7565568E231B0F270033695B /* Customer.swift in Sources */,
 				75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */,
+				75FBFD43231C10EC002D1D24 /* EncodingIntoEnumVC.swift in Sources */,
 				75FBFD3E231BF79E002D1D24 /* NestedCustomerModel.swift in Sources */,
 				75655673231AEC4F0033695B /* CompactMapVC.swift in Sources */,
 				75FBFD34231BEBC6002D1D24 /* PlacesModel.swift in Sources */,
