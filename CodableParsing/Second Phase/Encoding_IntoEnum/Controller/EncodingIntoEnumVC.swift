@@ -15,7 +15,7 @@ let nestedEnumJSON = """
 {
    "customers":[
         {
-            "firstName"  : "Anurag",
+            "first_name"  : "Anurag",
             "lastName"   : "Kashyap",
             "dateCreated": "05/17/1992",
             "address"    : {
@@ -38,15 +38,16 @@ let nestedEnumJSON = """
     override func viewDidLoad() {
         super.viewDidLoad()
         let decoder = JSONDecoder()
-        decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+        decoder.dateDecodingStrategy = .formatted(DateFormatter.decodableDate)
+        decoder.keyDecodingStrategy = .convertFromSnakeCase // Handles the key having key snake composition like in this case JSON's first_name
         let customer = try! decoder.decode(CustomerEnumResponseModel.self, from: nestedEnumJSON)
-        print(customer.customers[0].dateCreated)
+        print(customer.customers[0])
         
     }
 }
 
 extension DateFormatter {
-    static let iso8601Full : DateFormatter = {
+    static let decodableDate : DateFormatter = {
         let formatter = DateFormatter()
         formatter.dateFormat = "MM/dd/yyyy"
         return formatter
