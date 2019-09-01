@@ -9,7 +9,7 @@
 import UIKit
 
 class EncodingIntoEnumVC: UIViewController {
-    
+//dateCreated - Is in the ISO8601 format, And is the acceptable format if we want to decode the date using Codable, if not available then we have to convert the date into this format
 let nestedEnumJSON = """
 
 {
@@ -17,6 +17,7 @@ let nestedEnumJSON = """
         {
             "firstName"  : "Anurag",
             "lastName"   : "Kashyap",
+            "dateCreated": "05/17/1992",
             "address"    : {
                             
                     "street": "20/213",
@@ -26,7 +27,7 @@ let nestedEnumJSON = """
                             "lat": 34.21,
                             "lng": 23.12
                 },
-                "addressType"   : "house"
+                "addressType"   : "condo"
             }
         }
     ]
@@ -36,7 +37,18 @@ let nestedEnumJSON = """
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let customer = try! JSONDecoder().decode(CustomerEnumResponseModel.self, from: nestedEnumJSON)
-        print(customer.customers[0].address?.addressType?.rawValue)
+        let decoder = JSONDecoder()
+        decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
+        let customer = try! decoder.decode(CustomerEnumResponseModel.self, from: nestedEnumJSON)
+        print(customer.customers[0].dateCreated)
+        
     }
+}
+
+extension DateFormatter {
+    static let iso8601Full : DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MM/dd/yyyy"
+        return formatter
+    }()
 }

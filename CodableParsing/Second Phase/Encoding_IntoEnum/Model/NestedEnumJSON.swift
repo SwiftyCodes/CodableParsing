@@ -52,14 +52,18 @@ struct AddressEnumModel : Decodable {
 struct CustomerEnumResponseModel : Decodable {
     var customers : [CustomerEnumModel]
 }
+
 struct CustomerEnumModel : Decodable {
     var firstName : String
     var lastName : String
+    var dateCreated : Date
     var address : AddressEnumModel?
     
     private enum CodingKeys : String, CodingKey {
         case firstName
         case lastName
+        case dateCreated
         case address
+        
     }
 }
