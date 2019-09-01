@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodableParsing/Second Phase/Encoding_IntoEnum/Model/NestedEnumJSON.swift"
-            timestampString = "589051864.906672"
+            timestampString = "589062225.475791"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "12"
@@ -26,12 +26,76 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "CodableParsing/Third Phase/Decoding Diff Payloads/Controller/DifferentPayloadsVC.swift"
-            timestampString = "589051864.906775"
+            timestampString = "589062225.475875"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "104"
-            endingLineNumber = "104"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodableParsing/From Server/Controller/JsonPlaceHolderVC.swift"
+            timestampString = "589062225.475942"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "fetchUserFromApi()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "CodableParsing.JsonPlaceHolderVC.fetchUserFromApi() -&gt; ()"
+                  moduleName = "CodableParsing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anurag/Desktop/Xcode%20Projets/CodableParsing/CodableParsing/From%20Server/Controller/JsonPlaceHolderVC.swift"
+                  timestampString = "589061228.488887"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "423">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in CodableParsing.JsonPlaceHolderVC.fetchUserFromApi() -&gt; ()"
+                  moduleName = "CodableParsing"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/anurag/Desktop/Xcode%20Projets/CodableParsing/CodableParsing/From%20Server/Controller/JsonPlaceHolderVC.swift"
+                  timestampString = "589061228.492306"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "26"
+                  endingLineNumber = "26"
+                  offsetFromSymbolStart = "570">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "CodableParsing/From Server/Controller/JsonPlaceHolderVC.swift"
+            timestampString = "589062225.4763629"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "22"
+            endingLineNumber = "22"
+            landmarkName = "fetchUserFromApi()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

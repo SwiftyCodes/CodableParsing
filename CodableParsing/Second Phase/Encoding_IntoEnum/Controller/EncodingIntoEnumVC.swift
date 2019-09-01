@@ -41,7 +41,7 @@ let nestedEnumJSON = """
         decoder.dateDecodingStrategy = .formatted(DateFormatter.decodableDate)
         decoder.keyDecodingStrategy = .convertFromSnakeCase // Handles the key having key snake composition like in this case JSON's first_name
         let customer = try! decoder.decode(CustomerEnumResponseModel.self, from: nestedEnumJSON)
-        print(customer.customers[0])
+        print(customer.customers[0].address?.addressType?.rawValue ?? "")
         
     }
 }

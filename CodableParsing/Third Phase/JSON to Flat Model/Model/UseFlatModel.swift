@@ -10,18 +10,19 @@ import Foundation
 
 class UseFlatModel :Decodable {
     
+    //User Values
     var id :Int!
     var name :String!
     var userName :String!
     var email :String!
     
+    //Address Values
     var street :String!
     var suite :String!
     var city :String!
     var zipCode :String!
     
     private enum UserKeys :String, CodingKey {
-        
         case id
         case name
         case userName = "username"
@@ -30,12 +31,10 @@ class UseFlatModel :Decodable {
     }
     
     private enum AddressKeys :String, CodingKey {
-        
         case street
         case suite
         case city
         case zipCode = "zipcode"
-        
     }
     
     required init(from decoder :Decoder) throws {
@@ -47,9 +46,8 @@ class UseFlatModel :Decodable {
             self.userName = try! userContainer.decode(String.self, forKey: .userName)
             self.email = try! userContainer.decode(String.self, forKey: .email)
             
-            // address nested container
+            // Address NESTED container
             if let addressContainer = try? userContainer.nestedContainer(keyedBy: AddressKeys.self, forKey: .address) {
-                
                 self.street = try! addressContainer.decode(String.self, forKey: .street)
                 self.suite = try! addressContainer.decode(String.self, forKey: .suite)
                 self.city = try! addressContainer.decode(String.self, forKey: .city)

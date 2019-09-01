@@ -27,6 +27,10 @@
 		757BF204231C439000A4FB16 /* JsonToFlatModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF203231C439000A4FB16 /* JsonToFlatModelVC.swift */; };
 		757BF206231C439700A4FB16 /* JsonToFlatModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF205231C439700A4FB16 /* JsonToFlatModel.storyboard */; };
 		757BF209231C441C00A4FB16 /* UseFlatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF208231C441C00A4FB16 /* UseFlatModel.swift */; };
+		757BF20F231C4FB000A4FB16 /* JsonPlaceHolderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF20E231C4FB000A4FB16 /* JsonPlaceHolderVC.swift */; };
+		757BF211231C4FB900A4FB16 /* JsonPlaceHolder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF210231C4FB900A4FB16 /* JsonPlaceHolder.storyboard */; };
+		757BF213231C4FC600A4FB16 /* JsonPlaceHolderModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF212231C4FC600A4FB16 /* JsonPlaceHolderModel.swift */; };
+		757BF215231C50E300A4FB16 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF214231C50E300A4FB16 /* Constants.swift */; };
 		75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */; };
 		75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */; };
 		75FBFD34231BEBC6002D1D24 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */; };
@@ -61,6 +65,10 @@
 		757BF203231C439000A4FB16 /* JsonToFlatModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToFlatModelVC.swift; sourceTree = "<group>"; };
 		757BF205231C439700A4FB16 /* JsonToFlatModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JsonToFlatModel.storyboard; sourceTree = "<group>"; };
 		757BF208231C441C00A4FB16 /* UseFlatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFlatModel.swift; sourceTree = "<group>"; };
+		757BF20E231C4FB000A4FB16 /* JsonPlaceHolderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceHolderVC.swift; sourceTree = "<group>"; };
+		757BF210231C4FB900A4FB16 /* JsonPlaceHolder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JsonPlaceHolder.storyboard; sourceTree = "<group>"; };
+		757BF212231C4FC600A4FB16 /* JsonPlaceHolderModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonPlaceHolderModel.swift; sourceTree = "<group>"; };
+		757BF214231C50E300A4FB16 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DictArray.storyboard; sourceTree = "<group>"; };
 		75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictArrayVC.swift; sourceTree = "<group>"; };
 		75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				75655670231AEC4F0033695B /* AppDelegate.swift */,
+				757BF20A231C4F7700A4FB16 /* From Server */,
 				7565569B231B277F0033695B /* First Phase */,
 				75FBFD27231BEA33002D1D24 /* Second Phase */,
 				757BF1E9231C2A4200A4FB16 /* Third Phase */,
@@ -336,6 +345,41 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		757BF20A231C4F7700A4FB16 /* From Server */ = {
+			isa = PBXGroup;
+			children = (
+				757BF214231C50E300A4FB16 /* Constants.swift */,
+				757BF20D231C4F9500A4FB16 /* Model */,
+				757BF20C231C4F8800A4FB16 /* View */,
+				757BF20B231C4F8300A4FB16 /* Controller */,
+			);
+			path = "From Server";
+			sourceTree = "<group>";
+		};
+		757BF20B231C4F8300A4FB16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				757BF20E231C4FB000A4FB16 /* JsonPlaceHolderVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		757BF20C231C4F8800A4FB16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				757BF210231C4FB900A4FB16 /* JsonPlaceHolder.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		757BF20D231C4F9500A4FB16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				757BF212231C4FC600A4FB16 /* JsonPlaceHolderModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		75FBFD27231BEA33002D1D24 /* Second Phase */ = {
 			isa = PBXGroup;
 			children = (
@@ -513,6 +557,7 @@
 				75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */,
 				757BF1FD231C36EC00A4FB16 /* DiffrentPayloads.storyboard in Resources */,
 				75655698231B24DE0033695B /* CodableJSONArray.storyboard in Resources */,
+				757BF211231C4FB900A4FB16 /* JsonPlaceHolder.storyboard in Resources */,
 				757BF1F8231C306500A4FB16 /* DecodingInheritedValues.storyboard in Resources */,
 				75655678231AEC500033695B /* Assets.xcassets in Resources */,
 				75FBFD3C231BF77F002D1D24 /* NestedValue.storyboard in Resources */,
@@ -532,15 +577,18 @@
 				757BF1F1231C2AD900A4FB16 /* DecodingGenricValueVC.swift in Sources */,
 				75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */,
 				75FBFD48231C119E002D1D24 /* NestedEnumJSON.swift in Sources */,
+				757BF20F231C4FB000A4FB16 /* JsonPlaceHolderVC.swift in Sources */,
 				7565568A231B0E490033695B /* DecodableVC.swift in Sources */,
 				75655683231AEC6C0033695B /* JSONModel.swift in Sources */,
 				75FBFD3A231BF775002D1D24 /* NestedValueVC.swift in Sources */,
 				7565568E231B0F270033695B /* Customer.swift in Sources */,
 				757BF1FF231C370700A4FB16 /* DifferentPayloadsVC.swift in Sources */,
 				75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */,
+				757BF213231C4FC600A4FB16 /* JsonPlaceHolderModel.swift in Sources */,
 				757BF1F6231C305500A4FB16 /* DecodingInheritedValuesVC.swift in Sources */,
 				757BF209231C441C00A4FB16 /* UseFlatModel.swift in Sources */,
 				75FBFD43231C10EC002D1D24 /* EncodingIntoEnumVC.swift in Sources */,
+				757BF215231C50E300A4FB16 /* Constants.swift in Sources */,
 				75FBFD3E231BF79E002D1D24 /* NestedCustomerModel.swift in Sources */,
 				75655673231AEC4F0033695B /* CompactMapVC.swift in Sources */,
 				75FBFD34231BEBC6002D1D24 /* PlacesModel.swift in Sources */,
