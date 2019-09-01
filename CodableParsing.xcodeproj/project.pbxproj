@@ -24,6 +24,9 @@
 		757BF1F8231C306500A4FB16 /* DecodingInheritedValues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF1F7231C306500A4FB16 /* DecodingInheritedValues.storyboard */; };
 		757BF1FD231C36EC00A4FB16 /* DiffrentPayloads.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF1FC231C36EC00A4FB16 /* DiffrentPayloads.storyboard */; };
 		757BF1FF231C370700A4FB16 /* DifferentPayloadsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF1FE231C370700A4FB16 /* DifferentPayloadsVC.swift */; };
+		757BF204231C439000A4FB16 /* JsonToFlatModelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF203231C439000A4FB16 /* JsonToFlatModelVC.swift */; };
+		757BF206231C439700A4FB16 /* JsonToFlatModel.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF205231C439700A4FB16 /* JsonToFlatModel.storyboard */; };
+		757BF209231C441C00A4FB16 /* UseFlatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF208231C441C00A4FB16 /* UseFlatModel.swift */; };
 		75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */; };
 		75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */; };
 		75FBFD34231BEBC6002D1D24 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */; };
@@ -55,6 +58,9 @@
 		757BF1F7231C306500A4FB16 /* DecodingInheritedValues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DecodingInheritedValues.storyboard; sourceTree = "<group>"; };
 		757BF1FC231C36EC00A4FB16 /* DiffrentPayloads.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DiffrentPayloads.storyboard; sourceTree = "<group>"; };
 		757BF1FE231C370700A4FB16 /* DifferentPayloadsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DifferentPayloadsVC.swift; sourceTree = "<group>"; };
+		757BF203231C439000A4FB16 /* JsonToFlatModelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonToFlatModelVC.swift; sourceTree = "<group>"; };
+		757BF205231C439700A4FB16 /* JsonToFlatModel.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = JsonToFlatModel.storyboard; sourceTree = "<group>"; };
+		757BF208231C441C00A4FB16 /* UseFlatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UseFlatModel.swift; sourceTree = "<group>"; };
 		75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DictArray.storyboard; sourceTree = "<group>"; };
 		75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictArrayVC.swift; sourceTree = "<group>"; };
 		75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
@@ -213,6 +219,7 @@
 		757BF1E9231C2A4200A4FB16 /* Third Phase */ = {
 			isa = PBXGroup;
 			children = (
+				757BF200231C436500A4FB16 /* JSON to Flat Model */,
 				757BF1EA231C2A8C00A4FB16 /* Decoding Genric Value */,
 				757BF1F2231C302F00A4FB16 /* Decoding Inherited Values */,
 				757BF1F9231C36CC00A4FB16 /* Decoding Diff Payloads */,
@@ -293,6 +300,40 @@
 				757BF1FC231C36EC00A4FB16 /* DiffrentPayloads.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		757BF200231C436500A4FB16 /* JSON to Flat Model */ = {
+			isa = PBXGroup;
+			children = (
+				757BF207231C440D00A4FB16 /* Model */,
+				757BF201231C437400A4FB16 /* View */,
+				757BF202231C437900A4FB16 /* Controller */,
+			);
+			path = "JSON to Flat Model";
+			sourceTree = "<group>";
+		};
+		757BF201231C437400A4FB16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				757BF205231C439700A4FB16 /* JsonToFlatModel.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		757BF202231C437900A4FB16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				757BF203231C439000A4FB16 /* JsonToFlatModelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		757BF207231C440D00A4FB16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				757BF208231C441C00A4FB16 /* UseFlatModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		75FBFD27231BEA33002D1D24 /* Second Phase */ = {
@@ -475,6 +516,7 @@
 				757BF1F8231C306500A4FB16 /* DecodingInheritedValues.storyboard in Resources */,
 				75655678231AEC500033695B /* Assets.xcassets in Resources */,
 				75FBFD3C231BF77F002D1D24 /* NestedValue.storyboard in Resources */,
+				757BF206231C439700A4FB16 /* JsonToFlatModel.storyboard in Resources */,
 				75655676231AEC4F0033695B /* CompactMapVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,6 +528,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				757BF204231C439000A4FB16 /* JsonToFlatModelVC.swift in Sources */,
 				757BF1F1231C2AD900A4FB16 /* DecodingGenricValueVC.swift in Sources */,
 				75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */,
 				75FBFD48231C119E002D1D24 /* NestedEnumJSON.swift in Sources */,
@@ -496,6 +539,7 @@
 				757BF1FF231C370700A4FB16 /* DifferentPayloadsVC.swift in Sources */,
 				75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */,
 				757BF1F6231C305500A4FB16 /* DecodingInheritedValuesVC.swift in Sources */,
+				757BF209231C441C00A4FB16 /* UseFlatModel.swift in Sources */,
 				75FBFD43231C10EC002D1D24 /* EncodingIntoEnumVC.swift in Sources */,
 				75FBFD3E231BF79E002D1D24 /* NestedCustomerModel.swift in Sources */,
 				75655673231AEC4F0033695B /* CompactMapVC.swift in Sources */,
