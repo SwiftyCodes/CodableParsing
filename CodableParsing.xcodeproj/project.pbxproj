@@ -20,6 +20,8 @@
 		75655698231B24DE0033695B /* CodableJSONArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75655697231B24DE0033695B /* CodableJSONArray.storyboard */; };
 		757BF1EF231C2ACD00A4FB16 /* DecodingGenricValue.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF1EE231C2ACD00A4FB16 /* DecodingGenricValue.storyboard */; };
 		757BF1F1231C2AD900A4FB16 /* DecodingGenricValueVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF1F0231C2AD900A4FB16 /* DecodingGenricValueVC.swift */; };
+		757BF1F6231C305500A4FB16 /* DecodingInheritedValuesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 757BF1F5231C305500A4FB16 /* DecodingInheritedValuesVC.swift */; };
+		757BF1F8231C306500A4FB16 /* DecodingInheritedValues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 757BF1F7231C306500A4FB16 /* DecodingInheritedValues.storyboard */; };
 		75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */; };
 		75FBFD31231BEB71002D1D24 /* DictArrayVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */; };
 		75FBFD34231BEBC6002D1D24 /* PlacesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */; };
@@ -47,6 +49,8 @@
 		75655697231B24DE0033695B /* CodableJSONArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CodableJSONArray.storyboard; sourceTree = "<group>"; };
 		757BF1EE231C2ACD00A4FB16 /* DecodingGenricValue.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DecodingGenricValue.storyboard; sourceTree = "<group>"; };
 		757BF1F0231C2AD900A4FB16 /* DecodingGenricValueVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingGenricValueVC.swift; sourceTree = "<group>"; };
+		757BF1F5231C305500A4FB16 /* DecodingInheritedValuesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecodingInheritedValuesVC.swift; sourceTree = "<group>"; };
+		757BF1F7231C306500A4FB16 /* DecodingInheritedValues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DecodingInheritedValues.storyboard; sourceTree = "<group>"; };
 		75FBFD2E231BEB51002D1D24 /* DictArray.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DictArray.storyboard; sourceTree = "<group>"; };
 		75FBFD30231BEB71002D1D24 /* DictArrayVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictArrayVC.swift; sourceTree = "<group>"; };
 		75FBFD33231BEBC6002D1D24 /* PlacesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlacesModel.swift; sourceTree = "<group>"; };
@@ -206,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				757BF1EA231C2A8C00A4FB16 /* Decoding Genric Value */,
+				757BF1F2231C302F00A4FB16 /* Decoding Inherited Values */,
 			);
 			path = "Third Phase";
 			sourceTree = "<group>";
@@ -233,6 +238,31 @@
 				757BF1EE231C2ACD00A4FB16 /* DecodingGenricValue.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		757BF1F2231C302F00A4FB16 /* Decoding Inherited Values */ = {
+			isa = PBXGroup;
+			children = (
+				757BF1F4231C304300A4FB16 /* Controller */,
+				757BF1F3231C303E00A4FB16 /* View */,
+			);
+			path = "Decoding Inherited Values";
+			sourceTree = "<group>";
+		};
+		757BF1F3231C303E00A4FB16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				757BF1F7231C306500A4FB16 /* DecodingInheritedValues.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		757BF1F4231C304300A4FB16 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				757BF1F5231C305500A4FB16 /* DecodingInheritedValuesVC.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		75FBFD27231BEA33002D1D24 /* Second Phase */ = {
@@ -411,6 +441,7 @@
 				7565567B231AEC500033695B /* LaunchScreen.storyboard in Resources */,
 				75FBFD2F231BEB51002D1D24 /* DictArray.storyboard in Resources */,
 				75655698231B24DE0033695B /* CodableJSONArray.storyboard in Resources */,
+				757BF1F8231C306500A4FB16 /* DecodingInheritedValues.storyboard in Resources */,
 				75655678231AEC500033695B /* Assets.xcassets in Resources */,
 				75FBFD3C231BF77F002D1D24 /* NestedValue.storyboard in Resources */,
 				75655676231AEC4F0033695B /* CompactMapVC.storyboard in Resources */,
@@ -432,6 +463,7 @@
 				75FBFD3A231BF775002D1D24 /* NestedValueVC.swift in Sources */,
 				7565568E231B0F270033695B /* Customer.swift in Sources */,
 				75655696231B24CF0033695B /* CodableJSONArrayVC.swift in Sources */,
+				757BF1F6231C305500A4FB16 /* DecodingInheritedValuesVC.swift in Sources */,
 				75FBFD43231C10EC002D1D24 /* EncodingIntoEnumVC.swift in Sources */,
 				75FBFD3E231BF79E002D1D24 /* NestedCustomerModel.swift in Sources */,
 				75655673231AEC4F0033695B /* CompactMapVC.swift in Sources */,
